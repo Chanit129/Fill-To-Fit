@@ -1,10 +1,7 @@
-# Fill-To-Fit
-Report
 define(‘LINE_API’,”https://notify-api.line.me/api/notify");
  
 $token = “”; //CAfl4q2RfEnTsFR4XmjAbiw7YXmuNTljCxZT4SeMsil
-$str = “รายการเติมของแช่แข็ง”; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
- 
+$str = “รายการเติมของแช่แข็ง” 
 $res = notify_message($str,$token);
 print_r($res);function notify_message($message,$token){
  $queryData = array(‘message’ => $message);
